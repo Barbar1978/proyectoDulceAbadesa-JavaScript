@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Required meta tags -->
+<!-- Required meta tags -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,10 +23,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@400;600;900&display=swap"
         rel="stylesheet">
+         <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <title>DULCE ABADESA ,PASTELERIA ARTESANAL</title>
 </head>
+
 <body>
     <!--comienzo header-nav-->
     <header>
@@ -33,71 +36,68 @@
             <a href="#" class="header__link">
                 <img src="./img/logonuevo.png" alt="logo_dulceabadesa" class="header__img">
             </a>
-            <h1 class="nombre-sitio">DULCE ABADESA</h1> 
-        </div> 
+            <h1 class="nombre-sitio">DULCE ABADESA</h1>
+        </div>
         <div class="contenedor-navegacion">
-        <nav class="nav-principal contenedor">
-            <ul class="enlaces-menu">
-                <a href="index.html">INICIO</a>
-                <a href="tienda.html">TIENDA</a>
-                <a href="carrito.html">CARRITO</a>
-                <a href="contacto.html">CONTACTO</a>
-            </ul>
-            <button class="ham">
-                <span class="br-1"></span>
-                <span class="br-2"></span>
-                <span class="br-3"></span>
-            </button>
-            <div class="navbar" id="navbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                        <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
-                            width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"></img>
-                        <div id="carrito" class="dropdown-menu" aria-labelledby="navbar">
-                            <table id="lista-carrito" class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-
-                            <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
-                            <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
-                                Compra</a>
-                        </div>
-                    </li>
+            <nav class="nav-principal contenedor">
+                <ul class="enlaces-menu">
+                    <a href="index.html">INICIO</a>
+                    <a href="tienda.html">TIENDA</a>
+                    <a href="carrito.html">CARRITO</a>
+                    <a href="contacto.html">CONTACTO</a>
                 </ul>
-            </div>
-        </nav>
-    </div>
-   <!--fin header-nav-->
+                <button class="ham">
+                    <span class="br-1"></span>
+                    <span class="br-2"></span>
+                    <span class="br-3"></span>
+                </button>
+                <div class="navbar" id="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"></img>
+                            <div id="carrito" class="dropdown-menu" aria-labelledby="navbar">
+                                <table id="lista-carrito" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--fin header-nav-->
     </header>
     <!--comienzo main-->
     <main class="contenido-principal contenedor">
-        <h2  class="text-center">NUESTROS PRODUCTOS</h2>
-            <div class="listado-productos" id="listar-productos"> </div>
-            <!--PRODUCTOS CON JS-->
-            <template id="template-card">
-                <div class="producto">
-                    <img src="img/modelocarrusel2.png" id="imagen" alt="Imagen del producto">
-                    <div class="texto-producto text-center first-item">
-                        <h3 id="titulo">Brownie Especial</h3>
-                        <p>El brownie es de la familia de los bizcochuelos. Se caracteriza por ser bajo y bien húmedo.
-                             Les presento en este caso una variante de la receta original del brownie.
-                        </p>
-                        <h4 class="card-title pricing-card-title precio"><span class="precio">$2599</span></h4>
-                        <a href="#" class="btn agregar-carrito" data-id="1">Agregar al carrito</a>
-                    </div>
-                    <!---INFORMACION DEL PRODUCTO-->
+        <h2 class="text-center">NUESTROS PRODUCTOS</h2>
+        <div class="listado-productos" id="listar-productos"> </div>
+        <!--PRODUCTOS CON JS-->
+        <template id="template-card">
+            <div class="producto">
+                <img src="img/modelocarrusel2.png" id="imagen" alt="Imagen del producto">
+                <div class="texto-producto text-center first-item">
+                    <h3 id="titulo">Brownie Especial</h3>
+                    <p>El brownie es de la familia de los bizcochuelos. Se caracteriza por ser bajo y bien húmedo.
+                        Les presento en este caso una variante de la receta original del brownie.
+                    </p>
+                    <h4 class="card-title pricing-card-title precio"><span class="precio">$2599</span></h4>
+                    <a href="#" class="btn agregar-carrito" data-id="1">Agregar al carrito</a>
                 </div>
-                <!--PRODUCTO-->
-            </template>
+                <!---INFORMACION DEL PRODUCTO-->
+            </div>
+        </template>
     </main>
     <!--fin main-->
     <footer class="bg__footer text-center text-lg-start text-white">
@@ -111,24 +111,6 @@
                     </div>
                     <p class="text-center">¡Bienvenido a Dulce Abadesa!</p>
                     <p class="text-center">♥ Productos hechos con Amor ♥</p>
-                    <ul class="list-unstyled d-flex flex-row justify-content-center">
-                        <li>
-                            <a class="text-white px-2" href="https://www.facebook.com/duceabadesa" target="_blank">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-white px-2 " href="https://www.instagram.com/dulceabadesa" target="_blank">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                        <li>
-                            <a class="text-white ps-2" href="https://www.youtube.com/dulceabadesa">
-                                <i class="bi bi-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase mb-4">Contacto</h5>
@@ -149,19 +131,15 @@
         <div class="btn-up"><a href="#" class="subir">Ir arriba</a></div>
         <p class="author">🪐by <a href="https://github.com/Barbar1978">BARBY</a></p>
     </footer>
-<!--fin footer-->
-<!--scripts-->
+    <!--fin footer-->
+    <!--script-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--links scripts-->
     <script src="js/carrito.js"></script>
     <script src="js/pedidos.js"></script>
     <script src="js/stock.js"></script>
 </body>
-
 </html>

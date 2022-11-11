@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Required meta tags -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Sitio web dulceabadesa.com tienda de pasteleria artesanal donde podras comprar y ver nuestro catalogo de postres ,tortas,panaderia,pasteleria entre otros disponibles">
+    <meta name="keywords" content="alfajores, postres,tartas ,tortas ,desayunos ,comprar, regalar, dulces">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;900&display=swap" rel="stylesheet">
@@ -12,15 +15,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@400;600;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@400;600;900&display=swap"
         rel="stylesheet">
+        <!--css-->
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
-  
+
 </head>
 
 <body>
+    <!--comienzo header-nav-->
     <header>
         <div class="contenedor__logo">
             <a href="#" class="header__link">
@@ -31,10 +35,10 @@
         <div class="contenedor-navegacion">
             <nav class="nav-principal contenedor">
                 <ul class="enlaces-menu">
-                    <a href="index.html">Inicio</a>
-                    <a href="tienda.html">Tienda</a>
-                    <a href="carrito.html">Carrito</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="index.html">INICIO</a>
+                    <a href="tienda.html">TIENDA</a>
+                    <a href="carrito.html">CARRITO</a>
+                    <a href="contacto.html">CONTACTO</a>
                 </ul>
                 <button class="ham">
                     <span class="br-1"></span>
@@ -81,10 +85,10 @@
             </div>
         </div>
     </div>
-
     <br>
-
+    <!--fin header-nav-->
     <main>
+        <!--comienzo main-->
         <div class="container">
             <div class="row mt-3">
                 <div class="col">
@@ -100,11 +104,9 @@
                         <div class="form-group row">
                             <label for="email" class="col-12 col-md-2 col-form-label h2 datos">Correo :</label>
                             <div class="col-12 col-md-10">
-                                <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo"
-                                    name="cc_to">
+                                <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to">
                             </div>
                         </div>
-
                         <div id="carrito" class="form-group table-responsive">
                             <table class="table" id="lista-compra">
                                 <thead id="listar-productos">
@@ -119,7 +121,6 @@
 
                                 </thead>
                                 <tbody>
-
                                 </tbody>
                                 <tr>
                                     <th colspan="4" scope="col" class="text-right compra">SUB TOTAL :</th>
@@ -145,11 +146,9 @@
 
                             </table>
                         </div>
-
                         <div class="row justify-content-center" id="loaders">
                             <img id="cargando" src="img/cargando.gif" width="220">
                         </div>
-
                         <div class="row justify-content-between">
                             <div class="col-md-4 mb-2">
                                 <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
@@ -161,12 +160,10 @@
                         </div>
                     </form>
                 </div>
-
-
             </div>
-
         </div>
     </main>
+    <!--fin de main-->
     <footer class="bg__footer text-center text-lg-start text-white">
         <!-- Inicio Footer -->
         <div class="container pt-4">
@@ -178,24 +175,6 @@
                     </div>
                     <p class="text-center">¡Bienvenido a Dulce Abadesa!</p>
                     <p class="text-center">♥ Productos hechos con Amor ♥</p>
-                    <ul class="list-unstyled d-flex flex-row justify-content-center">
-                        <li>
-                            <a class="text-white px-2" href="https://www.facebook.com/duceabadesa" target="_blank">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="text-white px-2 " href="https://www.instagram.com/dulceabadesa" target="_blank">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                        <li>
-                            <a class="text-white ps-2" href="https://www.youtube.com/dulceabadesa">
-                                <i class="bi bi-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase mb-4">Contacto</h5>
@@ -215,19 +194,18 @@
         </div>
         <div class="btn-up"><a href="#" class="subir">Ir arriba</a></div>
         <p class="author">🪐by <a href="https://github.com/Barbar1978">BARBY</a></p>
+        <!--fin footer-->
     </footer>
-    </footer>
+         <!--script-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--links JavaScript-->
     <script src="js/carrito.js"></script>
     <script src="js/pedidos.js"></script>
     <script src="js/compra.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    </body>
-    
-    </html>
+</body>
+
+</html>
